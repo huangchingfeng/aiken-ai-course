@@ -46,6 +46,13 @@ body{background:#F5F5F7;color:var(--ink);}
 .sec h3{font-weight:800;}
 .tool-pill{display:inline-flex;align-items:center;gap:6px;background:#fff;border:1px solid #DDD;border-radius:22px;padding:8px 16px;margin:5px;text-decoration:none;color:var(--ink);font-weight:600;font-size:.9rem;}
 .tool-pill:hover{border-color:var(--cyan);color:var(--cyan-d);}
+.tcat{color:var(--cyan);font-weight:800;margin:24px 0 12px;font-size:1.05rem;}
+.tcard2{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.13);border-radius:12px;padding:15px 17px;height:100%;text-decoration:none;display:block;transition:.18s;}
+.tcard2:hover{background:rgba(0,212,255,.1);border-color:var(--cyan);transform:translateY(-2px);}
+.tcard2 .tn{font-weight:800;color:#fff;font-size:1.02rem;}
+.tcard2 .tn i{color:var(--cyan);margin-right:6px;}
+.tcard2 .tu{color:#C7C7CC;font-size:.84rem;margin-top:5px;line-height:1.5;}
+.tcard2 .tl{color:var(--cyan);font-size:.76rem;margin-top:8px;word-break:break-all;}
 .sec-dark{background:var(--navy);color:#fff;}
 .sec-warn{background:#FFF8F5;border-left:4px solid var(--orange);border-radius:0 12px 12px 0;padding:20px 24px;}
 footer{background:var(--navy);color:#C7C7CC;padding:28px 0;text-align:center;font-size:.88rem;}
@@ -91,12 +98,26 @@ footer .c{color:var(--cyan);}
 </div></div>
 
 <div class="sec sec-dark"><div class="container">
- <h3 class="mb-4">課程用到的 AI 工具</h3>
- <a class="tool-pill" href="https://gemini.google.com" target="_blank"><i class="bi bi-google"></i> Gemini（主力）</a>
- <a class="tool-pill" href="https://notebooklm.google.com" target="_blank"><i class="bi bi-journal-text"></i> NotebookLM</a>
- <a class="tool-pill" href="https://v2.chateverywhere.app/zh/meeting-transcription" target="_blank"><i class="bi bi-mic"></i> 會議記錄小幫手</a>
- <a class="tool-pill" href="https://manus.im/invitation/QNJFK5RPPE9B" target="_blank"><i class="bi bi-robot"></i> Manus</a>
- <a class="tool-pill" href="https://claude.ai" target="_blank"><i class="bi bi-chat-square-text"></i> Claude</a>
+ <h3 class="mb-2">課程用到的 AI 工具</h3>
+ <p class="text-white-50 mb-1">全部免費可用，點卡片前往官網。建議用 Google 帳號登入，課前先註冊好，上課才不會卡。</p>
+ <div class="tcat">🎯 全天主力工具</div>
+ <div class="row g-3">
+  <div class="col-md-6 col-lg-4"><a class="tcard2" href="https://gemini.google.com/app" target="_blank"><div class="tn"><i class="bi bi-google"></i>Gemini</div><div class="tu">全天主軸：對話、Deep Research 研究客戶、Canvas 生成簡報</div><div class="tl">gemini.google.com/app</div></a></div>
+  <div class="col-md-6 col-lg-4"><a class="tcard2" href="https://notebooklm.google.com" target="_blank"><div class="tn"><i class="bi bi-journal-text"></i>NotebookLM</div><div class="tu">上傳資料 → 轉「開車聽的 Podcast」、一鍵生成漂亮簡報</div><div class="tl">notebooklm.google.com</div></a></div>
+  <div class="col-md-6 col-lg-4"><a class="tcard2" href="https://v2.chateverywhere.app/zh/meeting-transcription" target="_blank"><div class="tn"><i class="bi bi-mic-fill"></i>會議記錄小幫手</div><div class="tu">上傳錄音 → 逐字稿、摘要、待辦事項一站完成（內部/外部版）</div><div class="tl">v2.chateverywhere.app</div></a></div>
+  <div class="col-md-6 col-lg-4"><a class="tcard2" href="https://manus.im/invitation/QNJFK5RPPE9B" target="_blank"><div class="tn"><i class="bi bi-robot"></i>Manus</div><div class="tu">AI Agent：自動研究客戶、配色、產出整份提案簡報（含老師邀請碼）</div><div class="tl">manus.im</div></a></div>
+  <div class="col-md-6 col-lg-4"><a class="tcard2" href="https://claude.ai" target="_blank"><div class="tn"><i class="bi bi-chat-square-text-fill"></i>Claude</div><div class="tu">簡報架構設計、長文件與數據的深度分析</div><div class="tl">claude.ai</div></a></div>
+ </div>
+ <div class="tcat">🔧 補充與比較</div>
+ <div class="row g-3">
+  <div class="col-md-6 col-lg-4"><a class="tcard2" href="https://chatgpt.com" target="_blank"><div class="tn"><i class="bi bi-chat-dots-fill"></i>ChatGPT</div><div class="tu">通用對話、內容產出（多數人已有，課程做比較用）</div><div class="tl">chatgpt.com</div></a></div>
+  <div class="col-md-6 col-lg-4"><a class="tcard2" href="https://grok.com" target="_blank"><div class="tn"><i class="bi bi-twitter-x"></i>Grok</div><div class="tu">X/Twitter 即時資訊查詢、時事整合</div><div class="tl">grok.com</div></a></div>
+ </div>
+ <div class="tcat">💎 阿峰老師專屬</div>
+ <div class="row g-3">
+  <div class="col-md-6 col-lg-4"><a class="tcard2" href="https://gemini.google.com/share/0eb4596b7796" target="_blank"><div class="tn"><i class="bi bi-magic"></i>黃金提示詞優化師</div><div class="tu">阿峰老師做的 Gem，把你的 prompt 一鍵優化得更精準</div><div class="tl">gemini.google.com/share/…</div></a></div>
+  <div class="col-md-6 col-lg-4"><a class="tcard2" href="https://huangchingfeng.github.io/aiken-ai-course/" target="_blank"><div class="tn"><i class="bi bi-stars"></i>AI 提示詞產生器</div><div class="tu">就是這個網站！100 個派遣業客製模板，選了改、一鍵複製</div><div class="tl">本站</div></a></div>
+ </div>
 </div></div>
 
 <div class="sec"><div class="container">
