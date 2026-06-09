@@ -666,18 +666,32 @@
                     </div>
                 </div>
 
-                <!-- Tool Links -->
-                <div class="info-card-gold">
-                    <strong><i class="bi bi-tools me-1"></i>課程 AI 工具：</strong>
-                    <div class="tool-links">
-                        <a href="https://gemini.google.com/app" target="_blank" class="tool-link"><i class="bi bi-stars"></i>Gemini（主角）</a>
-                        <a href="https://chatgpt.com" target="_blank" class="tool-link"><i class="bi bi-chat-dots"></i>ChatGPT</a>
-                        <a href="https://claude.ai" target="_blank" class="tool-link"><i class="bi bi-robot"></i>Claude</a>
-                        <a href="https://www.perplexity.ai" target="_blank" class="tool-link"><i class="bi bi-search"></i>Perplexity</a>
-                        <a href="https://notebooklm.google.com" target="_blank" class="tool-link"><i class="bi bi-book"></i>NotebookLM</a>
-                        <a href="https://manus.im" target="_blank" class="tool-link"><i class="bi bi-magic"></i>Manus</a>
-                        <a href="https://aistudio.google.com" target="_blank" class="tool-link"><i class="bi bi-palette"></i>AI Studio</a>
-                        <a href="https://v2.chateverywhere.app/zh/meeting-transcription" target="_blank" class="tool-link"><i class="bi bi-mic"></i>會議記錄小幫手</a>
+                <!-- 課程 AI 工具（完整版） -->
+                <div class="materials-card" style="background: linear-gradient(135deg, #ECFEFF 0%, #A5F3FC 100%); border-left-color: #0D9488;">
+                    <h5 style="color:#0E7490;"><i class="bi bi-tools me-1"></i>🧰 課程 AI 工具 — 點了直接註冊／開啟</h5>
+                    <div class="materials-sub">這堂課會用到的工具全部免費，建議上課前先用 <strong>Google 帳號</strong>登入好。手機也能用，但桌機體驗最佳。</div>
+
+                    <div style="margin-top:14px; font-size:0.92rem; font-weight:700; color:#B91C1C;"><i class="bi bi-star-fill"></i> 必備工具（上課前一定要登入好）</div>
+                    <div class="materials-grid" style="margin-top:8px;">
+                        <a href="https://gemini.google.com/app" target="_blank" class="materials-link" style="border-color:#67E8F9;">✨ Gemini <span class="count">本堂主角</span></a>
+                        <a href="https://chatgpt.com" target="_blank" class="materials-link" style="border-color:#67E8F9;">💬 ChatGPT <span class="count">對話/文案</span></a>
+                        <a href="https://claude.ai" target="_blank" class="materials-link" style="border-color:#67E8F9;">🤖 Claude <span class="count">長文整理</span></a>
+                        <a href="https://www.perplexity.ai" target="_blank" class="materials-link" style="border-color:#67E8F9;">🔎 Perplexity <span class="count">找資料附來源</span></a>
+                    </div>
+
+                    <div style="margin-top:14px; font-size:0.92rem; font-weight:700; color:#B45309;"><i class="bi bi-lightning-charge-fill"></i> 進階工具（用到再開）</div>
+                    <div class="materials-grid" style="margin-top:8px;">
+                        <a href="https://notebooklm.google.com" target="_blank" class="materials-link" style="border-color:#FDE68A;">📚 NotebookLM <span class="count">知識庫</span></a>
+                        <a href="https://manus.im" target="_blank" class="materials-link" style="border-color:#FDE68A;">🧩 Manus <span class="count">AI 簡報生成</span></a>
+                        <a href="https://aistudio.google.com" target="_blank" class="materials-link" style="border-color:#FDE68A;">🎨 Google AI Studio <span class="count">出圖/實驗</span></a>
+                        <a href="https://grok.com" target="_blank" class="materials-link" style="border-color:#FDE68A;">𝕏 Grok <span class="count">即時資訊</span></a>
+                        <a href="https://v2.chateverywhere.app/zh/meeting-transcription" target="_blank" class="materials-link" style="border-color:#FDE68A;">🎙 會議記錄小幫手 <span class="count">錄音轉逐字稿</span></a>
+                    </div>
+
+                    <div style="margin-top:14px; font-size:0.92rem; font-weight:700; color:#0E7490;"><i class="bi bi-gem"></i> 阿峰老師專屬工具</div>
+                    <div class="materials-grid" style="margin-top:8px;">
+                        <a href="https://gemini.google.com/share/0eb4596b7796" target="_blank" class="materials-link" style="border-color:#67E8F9;">🥇 黃金提示詞優化師 <span class="count">一鍵優化</span></a>
+                        <a href="https://huangchingfeng.github.io/aiken-ai-course/" target="_blank" class="materials-link" style="border-color:#67E8F9;">🧰 本站・提示詞產生器 <span class="count">120 模板</span></a>
                     </div>
                 </div>
 
@@ -734,6 +748,48 @@
                             <i class="bi bi-clipboard me-1"></i>複製
                         </button>
                     </div>
+                </div>
+
+                <!-- 課程簡報 -->
+                <div class="card mt-4">
+                    <div class="card-header p-4">
+                        <div class="section-label"><i class="bi bi-easel2"></i> 課程簡報</div>
+                        <h5 class="mb-3" style="font-weight:700;">課堂簡報隨選即看（點下方切換、可全螢幕、可下載）</h5>
+                        <div id="deck-tabs" class="d-flex flex-wrap gap-2">
+                            <button class="btn filter-btn active" data-deck="1Oi7d3j5T2LSmEk66HUluzIkxQWtmRNAj">📋 課程總覽（主簡報）</button>
+                            <button class="btn filter-btn" data-deck="1-ib8IQMLBUxMtgdgNxli6yQQ-mBnLmIb">🧠 單元1 案例</button>
+                            <button class="btn filter-btn" data-deck="1HaJEnn8fEFhpvTeTd7y-al0aC2Ggiklt">🎯 單元2 案例</button>
+                            <button class="btn filter-btn" data-deck="1bcdRPOH-Vu4xKbX0sehAiB0xouOftulC">🔎 單元2+ 找資料案例</button>
+                            <button class="btn filter-btn" data-deck="13gZEExnEOD0A0AQ1Xmx7OKJ2xDNwcoXX">🤝 單元3 案例</button>
+                            <button class="btn filter-btn" data-deck="1qopvR4uMKecPoHwCxK_mAqQB4aduHK1Q">📝 單元4 案例</button>
+                            <button class="btn filter-btn" data-deck="1Vf-t2cRP9M_IdP3WrMloHY3jv49-zzwx">🎨 單元5 案例</button>
+                            <button class="btn filter-btn" data-deck="17Kgkzpy99_Av8RVDzvQfh-e12pd_FNLI">🛠 找資料工具介紹</button>
+                        </div>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="ratio ratio-16x9" style="overflow:hidden;background:#000;">
+                            <iframe id="deckFrame" src="https://drive.google.com/file/d/1Oi7d3j5T2LSmEk66HUluzIkxQWtmRNAj/preview" allow="autoplay; fullscreen" allowfullscreen style="border:0;"></iframe>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white p-3 text-end" style="border-top:1px solid var(--border-color);border-radius:0 0 var(--card-radius) var(--card-radius);">
+                        <a id="deckOpen" href="https://drive.google.com/file/d/1Oi7d3j5T2LSmEk66HUluzIkxQWtmRNAj/view" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-box-arrow-up-right me-1"></i>新分頁開啟 / 下載
+                        </a>
+                    </div>
+                    <script>
+                    (function(){
+                        var tabs=document.getElementById('deck-tabs'); if(!tabs) return;
+                        var frame=document.getElementById('deckFrame'), openLink=document.getElementById('deckOpen');
+                        tabs.addEventListener('click', function(e){
+                            var b=e.target.closest('button[data-deck]'); if(!b) return;
+                            tabs.querySelectorAll('button').forEach(function(x){x.classList.remove('active');});
+                            b.classList.add('active');
+                            var id=b.dataset.deck;
+                            frame.src='https://drive.google.com/file/d/'+id+'/preview';
+                            openLink.href='https://drive.google.com/file/d/'+id+'/view';
+                        });
+                    })();
+                    </script>
                 </div>
             </div>
         </div>
